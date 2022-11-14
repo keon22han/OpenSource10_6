@@ -62,3 +62,29 @@ score 계산이란 검색결과의 정확도인데 , 이 정확도를 계산하�
 6. 클라이언트는 어플리케이션에 조회된 데이터를 전송
 
 ![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FcqxSq8%2FbtreYo66xxo%2F6SOrR9pepNReOPP8FOQ0K0%2Fimg.png)
+
+한수민- 가구배치 OpenSource
+
+- Floor planner2D
+- [https://github.com/CanKavaloglu/floorplanner2D](https://github.com/CanKavaloglu/floorplanner2D)
+- MIT라이센스
+1. 바닥 평면도를 본인이 직접 디자인 할 수 있고, 미리 만들어진 디자인을 확장하여 설계하는 것도 가능하다.
+2. 다양한 카메라 각도로 제작한 평면도를 볼 수 있다. 
+3. 2차원 평면도에서 3차원 모델을 자동으로 생성해준다.
+4. 카탈로그에 다양한 가구들이 있고, 본인이 직접 개체를 추가하는 것이 가능하다.
+
+- Floorplanner (아예 오픈되어있는 소프트웨어인데 어떻게 사용할 수 있을지 모르겠습니다ㅠ)
+- [https://floorplanner.com/](https://floorplanner.com/)
+- [https://github.com/floorplanner](https://github.com/floorplanner)
+- 라이센스 (?)
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3242c01b-9d78-458d-b5b6-58640a03c466/Untitled.png)
+
+1. 위의 오픈소스와 기능은 비슷합니다. (아래는 추가사항)
+2. Drag&Drop 인터페이스를 웹 브라우저에서 제공한다.
+3. 라이브러리에 업로드할 수 있고, 클라우드 동기화도 가능하다.
+
+- ARKit
+- [https://github.com/ignacio-chiazzo/ARKit](https://github.com/ignacio-chiazzo/ARKit)
+- MIT라이센스
+- 실제 AR기반 가구배치 오픈소스(가구가 한정적)
