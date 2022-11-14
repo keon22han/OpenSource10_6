@@ -88,3 +88,39 @@ score 계산이란 검색결과의 정확도인데 , 이 정확도를 계산하�
 - [https://github.com/ignacio-chiazzo/ARKit](https://github.com/ignacio-chiazzo/ARKit)
 - MIT라이센스
 - 실제 AR기반 가구배치 오픈소스(가구가 한정적)
+
+송형원 - 웹 구축 OpenSource
+
+# primavera
+
+[https://github.com/csj4032/primavera](https://github.com/csj4032/primavera)
+
+스프링부트 활용 커뮤니티 사이트
+
+- Social 정보를 이용한 회원 가입
+- Social 정보를 이용한 로그인, 로그아웃, 탈퇴
+- 게시글 등록, 수정, 삭제, 조회 기능
+- 게시글 답글 등록, 수정, 삭제 기능
+- 게시글 댓글 등록, 수정, 삭제 기능 및 대댓글 등록, 수정, 삭제
+- 게시글 관련 첨부파일 등록, 삭제
+- 게시글 편집 기능
+
+LICENSE - Apache-2.0
+
+# Web_Community_Project
+
+[https://github.com/youjeonghan/Web_Community_Project](https://github.com/youjeonghan/Web_Community_Project)
+
+회원가입, 로그인, 게시글, 댓글 등의 기본적인 기능을 제공하는 커뮤니티 사이트 오픈소스입니다.
+
+하지만 라이선스가 명시되어있지 않아 스프링부트관련 소스를 사용하는것이 좋아보입니다.
+
+# Ultimatemember
+
+[https://github.com/ultimatemember/ultimatemember](https://github.com/ultimatemember/ultimatemember)
+
+Wordpress의 프로필/로그인 관련 플러그인 오픈소스입니다.
+
+관련 주제로 찾다가 혹시 필요할 까 싶어서 일단 올려놨습니다.
+
+LICENSE - GPL-2.0
