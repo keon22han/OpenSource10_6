@@ -195,13 +195,11 @@ Graylog를 이용하여 Graylog를 이용하여 사용자가 웹 사이트를 �
 
 
 
-
-
 ##### 송지환 - 위치기반서비스 OpenSource, API
 
-사용 오픈소스: Swift Location
+사용 오픈소스: **Swift Location**
 
-사용 오픈API:  Google Maps Platform API(Google Maps API, Google Place API)
+사용 오픈API:  **Google Maps Platform API(Google Maps API, Google Place API)**
 
 ## 1. Swift Location 오픈소스 - (MIT LICENSE)
 
