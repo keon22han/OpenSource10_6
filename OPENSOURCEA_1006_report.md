@@ -294,5 +294,69 @@ window.initMap = function () {
 3. **장소 자동완성**- 사용자가 검색 시, 장소의 이름 혹은 주소를 자동완성 해준다.
 4. **추천검색어**- 쿼리 예측 서비스로 인해 사용자가 입력하면 추천 검색어를 반환한다.
 
+##### 신의환-서버관리 OpenSource
 
+# 1. Prometheus
+
+[https://github.com/prometheus/prometheus](https://github.com/prometheus/prometheus)
+
+- 라이센스 : Apache 2.0 License
+- 언어 : Go
+- 메트릭 기반의 오픈소스 모니터링(관리) 시스템
+    - 메트릭 : 일정한 시간동안 수집 된 일련의 순차적으로 정해진 데이터 셋의 집합(시계열 데이터)을 수집한 데이터
+- PromQL이라는 강력하고 유연한 쿼리언어 사용, 실시간 경고 가능함
+- 그라파나(Grafana)를 통한 시각화를 지원함
+    - 그라파나 : 메트릭 데이터 시각화 오픈소스 도구
+- 시스템으로부터 각종 지표를 수집, 저장, 검색 가능함
+- Alertmanager라는 단독 알림 생성, 받기, 그룹지정, 조건지정 등 알림 관리 도구를 사용함
+- 계층적, 수평적 구조 지원
+
+![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/de2bca76-5760-4a38-bec2-9cb1588a8625/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221115%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221115T144343Z&X-Amz-Expires=86400&X-Amz-Signature=f58212a87ab35e651f73fada4d2c47faee832179b559c182035acfd6d60531bd&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22Untitled.png%22&x-id=GetObject)
+
+아키텍쳐 개요
+
+### 장점
+
+- Pull 방식을 선택해 모든 정보를 중앙 서버로 보내지 않아도 됨.
+- OS metric 뿐 아니라 제삼자의 exporter 역시 다양하게 제공함
+- 데이터 저장소가 시계열 데이터 저장소라 많은 정보 빠르게 검색 가능함
+- 구조가 간단함 ⇒ 특정 솔루션에 대한 export가 쉬움
+- 일정 주기로 데이터를 수집하기에 앱에 무리가 가지 않음
+
+### 단점
+
+- 클러스터 구조가 불가능함, 계층적 구조기 때문이다.
+- 싱글 호스트이기에 저장공간이 한 쪽에 부담된다
+- 프로메테우스 서버가 어떤 이유로 비활성화 되었을 경우, 메트릭이 그동안 유실된다
+- 모든 로그를 추적하기에는 적합하지 않다, pulling 할때의 스냅샷 정보만 알 수 있다.
+
+# 2. Zabbix
+
+[https://github.com/zabbix/zabbix](https://github.com/zabbix/zabbix)
+
+- 라이센스 : GPL-2.0 license
+- 언어 : C (서버, 프록시, 에이전트), PHP (프론트엔드), Java (Java 게이트웨이)
+- 다수의 네트워크 매개 변수 및 서버의 상태와 무결성을 모니터링하는 소프트웨어.
+- 폴링과 트래핑 모두 지원함. 웹 인터페이스를 통해서 모든 정보 엑세스 가능, 어디서나 엑세스할 네트워크나 서버의 상태를 체크할 수 있다.
+    - 폴링과 트래핑 : SNMP 프로토콜의 통신 방법. 폴링은 매니저가 정보 요청, 에이전트가 요청을 받아 응답함. 트래핑은 특정 이벤트에 대해 에이전트가 매니저에게 직접 보낸다. 폴링은 문제 발생시 대응이 어렵다. 트래핑은 이를 보완해서 실시간으로 대응이 가능하다.
+- 유연한 알림 매커니즘을 가짐. 발생하는 이벤트 알림에 조건 설정을 통해서 서버 문제에 신속하게 대응할 수 있음
+
+![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/fac0ff55-a108-4d1f-bd7a-a304b9c6cdf4/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221115%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221115T144427Z&X-Amz-Expires=86400&X-Amz-Signature=4692faad5924a8257261a43ec5b893c50aaa695d9e94a5f72237a93e14620e0d&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22Untitled.png%22&x-id=GetObject)
+
+아키텍쳐 개요
+
+### 장점
+
+- 30초 마다 정보 수집함, 조정 가능함
+- 빠른 웹 인터페이스를 가짐
+- 사용자 권한 설정이 존재하여 특정 뷰만 보게 할 수 있음.
+- 데이터를 MySQL에 저장하여 활용함.
+- 템플릿을 사용해서 검사 시간을 줄임.
+- 자체 그래프 있지만, Prometheus와 똑같이 Grafana랑 연동해서 활용 가능.
+
+### 단점
+
+- 웹 인터페이스 기능이 너무 많고 복잡해 난잡함.
+- 맵 편집기로 설정하는 시간이 많이 소요된다.
+- 같은 종류의 데이터를 모니터링 할 때는 템플릿이 제대로 적용되지 않아 일일이 트리거 설정을 해줘야 함.
 
