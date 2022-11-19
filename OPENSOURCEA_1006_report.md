@@ -4,7 +4,7 @@
 
 ## 데이터흐름도
 
-![](./10_6DFD데이터흐름도.jpg)
+![](https://github.com/hs-1971193-keonheehan/OpenSource10_6/blob/keonheehan/10_6DFD%EB%8D%B0%EC%9D%B4%ED%84%B0%ED%9D%90%EB%A6%84%EB%8F%84.JPG?raw=true)
 
 **한건희-Search OpenSource**
 
