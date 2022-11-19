@@ -2,7 +2,12 @@
 
 *조사
 
-한건희-Search OpenSource
+## 데이터흐름도
+
+![](./10_6DFD데이터흐름도.jpg)
+
+**한건희-Search OpenSource**
+
 ### 1.**ElasticSearch 오픈소스 (Apache라이선스  V2.0) 를 이용**
 
 (오프소스 기반의 분산 데이터베이스로 검색엔진으로 루씬(Lucene)을 밑바탕에 두며 RESTful API를 지원)
