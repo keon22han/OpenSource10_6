@@ -63,28 +63,46 @@ score 계산이란 검색결과의 정확도인데 , 이 정확도를 계산하�
 
 ![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FcqxSq8%2FbtreYo66xxo%2F6SOrR9pepNReOPP8FOQ0K0%2Fimg.png)
 
-한수민- 가구배치 OpenSource
+한수민- 쇼핑 구매 OpenSource
 
-- Floor planner2D
-- [https://github.com/CanKavaloglu/floorplanner2D](https://github.com/CanKavaloglu/floorplanner2D)
-- MIT라이센스
-1. 바닥 평면도를 본인이 직접 디자인 할 수 있고, 미리 만들어진 디자인을 확장하여 설계하는 것도 가능하다.
-2. 다양한 카메라 각도로 제작한 평면도를 볼 수 있다. 
-3. 2차원 평면도에서 3차원 모델을 자동으로 생성해준다.
-4. 카탈로그에 다양한 가구들이 있고, 본인이 직접 개체를 추가하는 것이 가능하다.
+- Aliexpress API
+- [https://developers.aliexpress.com/en](https://developers.aliexpress.com/en)
+- [https://portals.aliexpress.com/help/help_center_API.html](https://portals.aliexpress.com/help/help_center_API.html)
 
-- Floorplanner (아예 오픈되어있는 소프트웨어인데 어떻게 사용할 수 있을지 모르겠습니다ㅠ)
-- [https://floorplanner.com/](https://floorplanner.com/)
-- [https://github.com/floorplanner](https://github.com/floorplanner)
-- 라이센스 (?)
+1. Aliexpress API는 HTTP를 기반으로 호출해야 한다.
+2. 특정 API를 호출하기 위해선 2가지의 선택지가 있다.
+    	1) (추천) TOP에서 제공하는 공식 SDK를 사용하는 방법. 요청 캡슐화, 응답 해석등 다양한 기능을 이용할 수 있다.
+    	2) TOP 프로토콜에 따라 HTTP 요청을 캡슐화 하는 방법.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3242c01b-9d78-458d-b5b6-58640a03c466/Untitled.png)
+![]([https://img.alicdn.com/top/i1/LB1Q.YhmYYI8KJjy0FaXXbAiVXa](https://img.alicdn.com/top/i1/LB1Q.YhmYYI8KJjy0FaXXbAiVXa))
 
-1. 위의 오픈소스와 기능은 비슷합니다. (아래는 추가사항)
-2. Drag&Drop 인터페이스를 웹 브라우저에서 제공한다.
-3. 라이브러리에 업로드할 수 있고, 클라우드 동기화도 가능하다.
+3. Aliexpress 와의 통합
+	1) Aliexpress 플랫폼에 등록 (판매자 계정, 개발자 등록) → 앱 생성 완료
+    	2) 사용자의 개인 데이터(ex : 제품, 주문)와 오픈 플랫폼을 연결하기 위해선 사용자의 데이터에 접근할 수 있는 엑세스 토큰이 필요하다.
+     	   → Oauth 2.0 프로토콜 사용 (서버측, 클라이언트 측 프로세스의 2가지 액세스 토큰 획득 방법 지원)
+     	   : 표준 사용자 인증 프로토콜로 사용자가 인터넷 서비스의 기능을 다른 애플리케이션에서도 사용할 수 있도록 한 것이다. 사용자의 인증, 권한 부여 등을 지원한다. 
+        
+4. 제품 관리
+	1) Aliexpress 카테고리를 얻고, 카테고리 매핑을 수행한다.
+	2) 판매자의 경우 필요한 브랜드의 허가를 신청한다.
+	3) 배송 템플릿을 설정한다.
+	4) (필요에 따라) 사이즈 차트 템플릿 설정
+	5) ( 제품 게시 및 편집시 사용하는 방법 )
+	-> Product schema 사용 : 제품의 필드, 옵션등을 정의하기 위한 JSON 타입의 사양이다. 하나의 API 만으로도 제품의 모든 정보를 쉽게 가져올 수 있다. 
+        
+    
+5. 주문 과정
 
-- ARKit
-- [https://github.com/ignacio-chiazzo/ARKit](https://github.com/ignacio-chiazzo/ARKit)
-- MIT라이센스
-- 실제 AR기반 가구배치 오픈소스(가구가 한정적)
+![]([https://tida.alicdn.com/oss_1615879444751_null_FqB19kT6.jpg](https://tida.alicdn.com/oss_1615879444751_null_FqB19kT6.jpg))
+![]([https://tida.alicdn.com/oss_1634698965068_null_VEkLpY2P.jpg](https://tida.alicdn.com/oss_1634698965068_null_VEkLpY2P.jpg))
+
+	1) 주문 목록을 받는다.
+	2) 목록을 반복한다.
+	3) 주문 ID를 포함해 정보를 받는다. 판매자가 구매자에게 주문을 물리적으로 이행하는 단계이다.
+	4) 운송업체의 이름을 받는다. 
+	5) Aliexpress에서 주문을 이행한다.
+		a. order id로 온라인 물류 서비스 목록을 가져온다.
+		b. 파라미터를 기반으로 창고에 주문을 생성한다. (경우에 따라)
+		c. 국제 물류 번호를 받는다.
+		d. 국제 물류 번호로 인쇄 정보를 받는다. (창고에 주문이 생성된 경우)
+	6) 판매자로부터 구매자가 제품을 받는다.
