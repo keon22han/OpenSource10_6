@@ -326,13 +326,39 @@ REST API방식의 로그인 API를 기준으로 작성.
 - 도식화
 ![](https://developers.kakao.com/docs/latest/ko/assets/style/images/kakaologin/kakaologin_sequence.png)
 
+##### 신의환-서버관리 OpenSource
 
+# Prometheus
 
+[https://github.com/prometheus/prometheus](https://github.com/prometheus/prometheus)
 
+- 라이센스 : Apache 2.0 License
+- 언어 : Go
+- 메트릭 기반의 오픈소스 모니터링(관리) 시스템
+    - 메트릭 : 일정한 시간동안 수집 된 일련의 순차적으로 정해진 데이터 셋의 집합(시계열 데이터)을 수집한 데이터
+- PromQL이라는 강력하고 유연한 쿼리언어 사용, 실시간 경고 가능함
+- 그라파나(Grafana)를 통한 시각화를 지원함
+    - 그라파나 : 메트릭 데이터 시각화 오픈소스 도구
+- 시스템으로부터 각종 지표를 수집, 저장, 검색 가능함
+- Alertmanager라는 단독 알림 생성, 받기, 그룹지정, 조건지정 등 알림 관리 도구를 사용함
+- 계층적, 수평적 구조 지원
 
+![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/de2bca76-5760-4a38-bec2-9cb1588a8625/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221115%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221115T144343Z&X-Amz-Expires=86400&X-Amz-Signature=f58212a87ab35e651f73fada4d2c47faee832179b559c182035acfd6d60531bd&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22Untitled.png%22&x-id=GetObject)
 
+아키텍쳐 개요
 
+### 장점
 
+- Pull 방식을 선택해 모든 정보를 중앙 서버로 보내지 않아도 됨.
+- OS metric 뿐 아니라 제삼자의 exporter 역시 다양하게 제공함
+- 데이터 저장소가 시계열 데이터 저장소라 많은 정보 빠르게 검색 가능함
+- 구조가 간단함 ⇒ 특정 솔루션에 대한 export가 쉬움
+- 일정 주기로 데이터를 수집하기에 앱에 무리가 가지 않음
 
+### 단점
 
+- 클러스터 구조가 불가능함, 계층적 구조기 때문이다.
+- 싱글 호스트이기에 저장공간이 한 쪽에 부담된다
+- 프로메테우스 서버가 어떤 이유로 비활성화 되었을 경우, 메트릭이 그동안 유실된다
+- 모든 로그를 추적하기에는 적합하지 않다, pulling 할때의 스냅샷 정보만 알 수 있다.
 
