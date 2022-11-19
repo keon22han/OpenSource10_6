@@ -296,3 +296,43 @@ window.initMap = function () {
 
 
 
+###한우창 - 로그인 서비스 오픈소스
+(MIT License) 
+
+https://github.com/react-native-seoul/react-native-kakao-login
+
+기능
+ 
+1. 로그인 화면 구성
+2. 로그인 시 API키와 Redirect URL을 담아 카카오 서버로 인가 코드 요청
+3. Redirect URL에 붙어온 토큰 발급 코드 split
+4. 발급 코드를 담아 토큰 발급 요청 및 유효성 검증 
+5. 로그인
+
+###카카오 로그인 API
+
+카카오 SDK는 Android, IOS, JavaScript, REST API 방식의 로그인API가 있으며, 각 방식에 따른 구현 가이드를 제공
+REST API방식의 로그인 API를 기준으로 작성.
+++카카오 로그인 API는 OAuth 2.0 방식으로 접근 권한을 제공.
+
+
+**REST API -  주로 HTTP상 에서의 요청이 어떤 동작이나 정보를 위한 것인지 대해 구조를 파악할 필요없이 그 요청의 모습 자체로 기능을 추론할 수 있도록 만들어진 API를 의미.
+
+**사전 준비 - 로그인 API를 사용하려면 https://developers.kakao.com/ 에서 개발자 등록 후 API사용 권한에 해당하는 API키를 발급이 요구됨.
+	     - Redirect URL(인가 요청 시 발급될 코드를 받을)
+
+**OAuth - 인터넷 사용자들이 각기 다른 웹사이트 상에서 접근 권한을 부여받을 수 있는 공통적인 수단으로서 사용되는 접근 위임을 의미.
+
+- 도식화
+![](https://developers.kakao.com/docs/latest/ko/assets/style/images/kakaologin/kakaologin_sequence.png)
+
+
+
+
+
+
+
+
+
+
+
