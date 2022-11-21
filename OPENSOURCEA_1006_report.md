@@ -80,7 +80,7 @@ score 계산이란 검색결과의 정확도인데 , 이 정확도를 계산하�
     	1) (추천) TOP에서 제공하는 공식 SDK를 사용하는 방법. 요청 캡슐화, 응답 해석등 다양한 기능을 이용할 수 있다.
     	2) TOP 프로토콜에 따라 HTTP 요청을 캡슐화 하는 방법.
 
-![]([https://img.alicdn.com/top/i1/LB1Q.YhmYYI8KJjy0FaXXbAiVXa](https://img.alicdn.com/top/i1/LB1Q.YhmYYI8KJjy0FaXXbAiVXa))
+![](https://img.alicdn.com/top/i1/LB1Q.YhmYYI8KJjy0FaXXbAiVXa)
 
 3. Aliexpress 와의 통합
 	1) Aliexpress 플랫폼에 등록 (판매자 계정, 개발자 등록) → 앱 생성 완료
@@ -99,8 +99,8 @@ score 계산이란 검색결과의 정확도인데 , 이 정확도를 계산하�
     
 5. 주문 과정
 
-![]([https://tida.alicdn.com/oss_1615879444751_null_FqB19kT6.jpg](https://tida.alicdn.com/oss_1615879444751_null_FqB19kT6.jpg))
-![]([https://tida.alicdn.com/oss_1634698965068_null_VEkLpY2P.jpg](https://tida.alicdn.com/oss_1634698965068_null_VEkLpY2P.jpg))
+![](https://tida.alicdn.com/oss_1615879444751_null_FqB19kT6.jpg)
+![](https://tida.alicdn.com/oss_1634698965068_null_VEkLpY2P.jpg)
 
 	1) 주문 목록을 받는다.
 	2) 목록을 반복한다.
