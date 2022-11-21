@@ -87,14 +87,40 @@ score 계산이란 검색결과의 정확도인데 , 이 정확도를 계산하�
 
 송형원 - 웹 구축 OpenSource
 
-# primavera
+##스프링부트(SpringBoot)
+웹 개발 OpenSource
+
+[https://spring.io/projects/spring-boot]
+
+LICENSE - Apache-2.0
+
+#SpringBoot란?
+자바 플랫폼을 위한 오픈소스 애플리케이션 프레임워크 Spring의 많은 부분을 자동화하여
+사용자가 편하게 사용할 수 있게 한다. 실행환경 등 인프라 관련을 신경 쓸 필요 없이 코딩을 시작할 수 있다.
+
+#스프링부트의 장점
+-쉬운 접근
+        -JAVA로 만든 서버 어플리케이션으로 JAVA로 개발하는 사람들이 쉽게 적응 가능
+-설정의 자동화
+        -프로젝트에 추가된 라이브러리를 기반으로 실행에 필요한 환경을 자동 설정
+        -필요한 라이브러리 추가 시 관련된 스프링설정을 자동으로 정리
+-라이브러리 버전관리
+        -연관된 라이브러리들도 호환되는 버전으로 다운로드
+-Emcedded Tomcat
+        -Tomcat 서버 내장, 별도 설정없이 실행결과를 빠르게 확인가능
+-독립적으로 실행가능한 JAR
+        -웹 애플리케이션도 WAR이 아닌 JAR파일로 패키징하여 사용 가능
+
+#스프링부트의 단점
+-IT관리자의 능력에 따라 성능차이가 존재하고, 이슈 조치가 어렵다
+-대용량 트래픽처리가 어려운 부분이 존재한다
+
+#primavera
 
 [https://github.com/csj4032/primavera](https://github.com/csj4032/primavera)
 
-스프링부트 활용 커뮤니티 사이트
+스프링부트 활용 커뮤니티 사이트 오픈소스
 
-- Social 정보를 이용한 회원 가입
-- Social 정보를 이용한 로그인, 로그아웃, 탈퇴
 - 게시글 등록, 수정, 삭제, 조회 기능
 - 게시글 답글 등록, 수정, 삭제 기능
 - 게시글 댓글 등록, 수정, 삭제 기능 및 대댓글 등록, 수정, 삭제
@@ -102,24 +128,6 @@ score 계산이란 검색결과의 정확도인데 , 이 정확도를 계산하�
 - 게시글 편집 기능
 
 LICENSE - Apache-2.0
-
-# Web_Community_Project
-
-[https://github.com/youjeonghan/Web_Community_Project](https://github.com/youjeonghan/Web_Community_Project)
-
-회원가입, 로그인, 게시글, 댓글 등의 기본적인 기능을 제공하는 커뮤니티 사이트 오픈소스입니다.
-
-하지만 라이선스가 명시되어있지 않아 스프링부트관련 소스를 사용하는것이 좋아보입니다.
-
-# Ultimatemember
-
-[https://github.com/ultimatemember/ultimatemember](https://github.com/ultimatemember/ultimatemember)
-
-Wordpress의 프로필/로그인 관련 플러그인 오픈소스입니다.
-
-관련 주제로 찾다가 혹시 필요할 까 싶어서 일단 올려놨습니다.
-
-LICENSE - GPL-2.0
 
 
 
