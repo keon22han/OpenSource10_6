@@ -378,23 +378,24 @@ REST API방식의 로그인 API를 기준으로 작성.
 
 ##### 로그인화면
 
-
+![ ](https://github.com/hs-1971193-keonheehan/OpenSource10_6/blob/main/%EB%A1%9C%EA%B7%B8%EC%9D%B8%ED%99%94%EB%A9%B4.jpeg?raw=true)
 
 ##### 가구검색+가구카테고라+가구추천
 
-
+![](https://github.com/hs-1971193-keonheehan/OpenSource10_6/blob/main/%EA%B0%80%EA%B5%AC%EA%B2%80%EC%83%89_%EA%B0%80%EA%B5%AC%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC_%EA%B0%80%EA%B5%AC%EC%B6%94%EC%B2%9C.jpeg?raw=true)
 
 ##### 가구 커뮤니티
 
-
+![](https://github.com/hs-1971193-keonheehan/OpenSource10_6/blob/main/%EA%B0%80%EA%B5%AC_%EC%BB%A4%EB%AE%A4%EB%8B%88%ED%8B%B0.jpeg?raw=true)
 
 ##### 근처 가구점 평점+리뷰
 
-
+![](https://github.com/hs-1971193-keonheehan/OpenSource10_6/blob/main/%EA%B7%BC%EC%B2%98%EA%B0%80%EA%B5%AC%EC%A0%90_%ED%8F%89%EC%A0%90_%EB%A6%AC%EB%B7%B0.jpeg?raw=true)
 
 ##### 근처 가구점 지도전시
 
-
+![](https://github.com/hs-1971193-keonheehan/OpenSource10_6/blob/main/%EA%B7%BC%EC%B2%98%EA%B0%80%EA%B5%AC%EC%A0%90_%EC%A7%80%EB%8F%84%EC%A0%84%EC%8B%9C.jpeg?raw=true)
 
 ##### 채팅기능
 
+![](https://github.com/hs-1971193-keonheehan/OpenSource10_6/blob/main/%EC%B1%84%ED%8C%85%ED%99%94%EB%A9%B4.jpeg?raw=true)
