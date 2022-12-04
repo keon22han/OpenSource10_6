@@ -42,33 +42,29 @@
 
 + 대상: 1인 가구, 중고거래를 선호하는 대학생이나 사회초년생
 + 특징: GUI, 세부 설명 (아래 참고) 
-+ 
+
 
 ![가구점정보](https://raw.githubusercontent.com/hs-1971193-keonheehan/OpenSource10_6/f86199b14da257b4983caaf297cb26d45176c50b/%EA%B7%BC%EC%B2%98%EA%B0%80%EA%B5%AC%EC%A0%90_%ED%8F%89%EC%A0%90_%EB%A6%AC%EB%B7%B0.jpeg)
-
-
-
-![가구위치](https://raw.githubusercontent.com/hs-1971193-keonheehan/OpenSource10_6/f86199b14da257b4983caaf297cb26d45176c50b/%EA%B7%BC%EC%B2%98%EA%B0%80%EA%B5%AC%EC%A0%90_%EC%A7%80%EB%8F%84%EC%A0%84%EC%8B%9C.jpeg)
 + 사용자 위치 서비스를 기반으로, 가까운 가구점을 추천해줌. 
 + 가구점의 외관사진, 전화번호, 사용자 리뷰, 현 위치로부터 걸리는 시간 등을 한 번에 파악 가능. 
 
 
-![가구추천](https://raw.githubusercontent.com/hs-1971193-keonheehan/OpenSource10_6/f86199b14da257b4983caaf297cb26d45176c50b/%EA%B0%80%EA%B5%AC%EA%B2%80%EC%83%89_%EA%B0%80%EA%B5%AC%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC_%EA%B0%80%EA%B5%AC%EC%B6%94%EC%B2%9C.jpeg)
+![가구위치](https://raw.githubusercontent.com/hs-1971193-keonheehan/OpenSource10_6/f86199b14da257b4983caaf297cb26d45176c50b/%EA%B7%BC%EC%B2%98%EA%B0%80%EA%B5%AC%EC%A0%90_%EC%A7%80%EB%8F%84%EC%A0%84%EC%8B%9C.jpeg)
 + 지도에서 사용자의 현재 위치와 가구점의 정확한 위치 파악 가능. 
 + 카테고리 별(침구류, 가구, 인테리어)로 분류해서 위치를 한 번에 시각적으로 파악 가능. 
 
 
-![가구추천](![image](https://user-images.githubusercontent.com/107299318/205477883-6838ea69-81b0-47a1-9a50-19b79bf17fa0.png))
+![가구추천](https://raw.githubusercontent.com/hs-1971193-keonheehan/OpenSource10_6/f86199b14da257b4983caaf297cb26d45176c50b/%EA%B0%80%EA%B5%AC%EA%B2%80%EC%83%89_%EA%B0%80%EA%B5%AC%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC_%EA%B0%80%EA%B5%AC%EC%B6%94%EC%B2%9C.jpeg)
 + 검색을 통해 사용자의 데이터를 수집하고, 이를 토대로 가구 추천 서비스 제공. 
-+ 더욱 상세한 카테고리 별로 가구들이 정리되어있음. 
++ 더욱 상세한 카테고리 별로 가구들이 정리되어있음.
 
 
-![커뮤니티](https://raw.githubusercontent.com/hs-1971193-keonheehan/OpenSource10_6/f86199b14da257b4983caaf297cb26d45176c50b/%EC%B1%84%ED%8C%85%ED%99%94%EB%A9%B4.jpeg)
+![커뮤니티](https://raw.githubusercontent.com/hs-1971193-keonheehan/OpenSource10_6/f86199b14da257b4983caaf297cb26d45176c50b/%EA%B0%80%EA%B5%AC_%EC%BB%A4%EB%AE%A4%EB%8B%88%ED%8B%B0.jpeg)
 + 커뮤니티 접근 권한을 동네로 한정지으면서 신뢰감과 편리성 모두 제공. 
 + 다양한 카테고리 별로 구분지어 커뮤니티를 단순히 중고거래에 한정짓지 않고 일상, 고민, 도움요청 등 실제 커뮤니티처럼 사용 가능. 
 
 
-![대화창](https://github.com/hs-1971193-keonheehan/OpenSource10_6/commit/f86199b14da257b4983caaf297cb26d45176c50b#diff-212089938cc82bf03bdff79fd13cf7c5616b49c51906a503828a607e055bf7d5)
+![대화창](https://raw.githubusercontent.com/hs-1971193-keonheehan/OpenSource10_6/f86199b14da257b4983caaf297cb26d45176c50b/%EC%B1%84%ED%8C%85%ED%99%94%EB%A9%B4.jpeg)
 + 1:1 대화를 통해 빠르고 정확하게 중고거래 가능
 
 ------
