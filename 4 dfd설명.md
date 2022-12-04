@@ -4,7 +4,6 @@
 
 ![](https://github.com/hs-1971193-keonheehan/OpenSource10_6/raw/keonheehan/10_6DFD%EB%8D%B0%EC%9D%B4%ED%84%B0%ED%9D%90%EB%A6%84%EB%8F%84.JPG?raw=true)
 
-
 **4.2**
 
 * 사용자가 **SpringBoot** 기반으로 제작한 페이지에 접속을 하면 페이지에서 GUI를 제공합니다. 
