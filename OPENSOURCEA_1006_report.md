@@ -282,9 +282,9 @@ score 계산이란 검색결과의 정확도인데 , 이 정확도를 계산하�
 ElasticSearch는 GrayLog와 연동하여 GrayLog에서 보낸 로그들을 저장하는 기능도 가지고있습니다. 그렇기에 GrayLog와 연동해줍니다.
     
 ## **다음으로는 GrayLog와 연동하는 법입니다.** ##
-    
+------------
 ### 인터넷이 연결된 경우 yum repository에서 설치
-
+    
 http://www.elastic.co/guide/en/elasticsearch/reference/current/setup-repositories.html
 rpm --import https://packages.elasticsearch.org/GPG-KEY-elasticsearch
 vi /etc/yum.repos.d/elasticsearch.repo
@@ -296,29 +296,29 @@ gpgkey=http://packages.elasticsearch.org/GPG-KEY-elasticsearch
 enabled=1
 yum install elasticsearch
 chkconfig --add elasticsearch
-    
+------------
 ### 인터넷이 연결되지 않을 경우 페키지 다운로드 후 업로드 설치
     
 wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.4.4.noarch.rpm    
 rpm -ivh elasticsearch-1.4.4.noarch.rpm
-    
+------------
 ### 설정
     
 vim /etc/elasticsearch/elasticsearch.yml    
 32 cluster.name: elastic    
 40 node.name: "node1"    
 47 node.master: true
-    
+-----------
 ### Graylog-server, Graylog-web 설치
     
 http://docs.graylog.org/en/1.0/pages/installation.html#virtual-machine-appliances
-    
+-------------
 ### 많은 설치 방법이 있지만, yum repository방법으로 설치
     
 sudo rpm -Uvh https://packages.graylog2.org/repo/packages/graylog-1.0-repository-el6_latest.rpm    
 yum install graylog-server graylog-web
 
-    
+---------------
 ### Graylog-server 설정
      
 vim /etc/graylog/server/server.conf    
@@ -335,10 +335,12 @@ vim /etc/graylog/server/server.conf
 Scrapy에 대한 Elasticsearch 지원은 다음 모듈을 설치하여 사용할 수 있습니다.    
 pip install "ScrapyElasticSearch"     
 스파이더가 생성한 항목을 가져오고 라이브러리 pyes 를 사용하여 Elasticsearch에 있는 항목을 인덱싱 합니다.
-     
+
+--------
 항목을 Elasticsearch에 넣도록 Scrapy를 구성하려면 어딘가에서 실행 중인 인스턴스가 있어야 하기때문에     
 settings.py 에서 파이프라인을 구성합니다.
 
+-------
 '''python
 ```python
 ITEM_PIPELINES = [
