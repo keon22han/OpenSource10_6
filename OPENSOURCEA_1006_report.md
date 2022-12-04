@@ -2,35 +2,42 @@
 # **오픈소스 소프트웨어 10_6조 시스템 설계서**
 
 ### <1인 가구를 위한 인테리어 서비스>
-
-
-
-
-
-
-
-
-
-
-
-Document ID    :  SYSTEM DESIGN - V 0.1
-Version Number :  0.1
-Issue Date     :  December 04, 2022
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+Document ID    :  SYSTEM DESIGN - V 0.1   
+Version Number :  0.1    
+Issue Date     :  December 04, 2022    
 Classification :  Public
-
-------
+-----------
 
 ## 조원 정보 
+
 * 한건희
+
 * 송지환
+
 * 신승혜
+
 * 한수민
+
 * 한우창
+
 * 송형원
+
 * 신의환
+
 * 최현진
 
-------
+---------
 
 ## 목차
 
@@ -601,7 +608,7 @@ MongoDB는 GrayLog의 구성요소 중 하나로 GrayLog로부터 전달받은 �
 
 ### 4. DFD - 4.1 DFD
 
-![](https://github.com/hs-1971193-keonheehan/OpenSource10_6/raw/keonheehan/10_6DFD%EB%8D%B0%EC%9D%B4%ED%84%B0%ED%9D%90%EB%A6%84%EB%8F%84.JPG?raw=true)
+![](https://github.com/hs-1971193-keonheehan/OpenSource10_6/blob/main/10_6DFD%EB%8D%B0%EC%9D%B4%ED%84%B0%ED%9D%90%EB%A6%84%EB%8F%84.JPG?raw=true)
 
 -------
 
