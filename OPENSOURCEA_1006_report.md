@@ -44,27 +44,27 @@
 + 특징: GUI, 세부 설명 (아래 참고) 
 
 
-![가구점정보](https://raw.githubusercontent.com/hs-1971193-keonheehan/OpenSource10_6/f86199b14da257b4983caaf297cb26d45176c50b/%EA%B7%BC%EC%B2%98%EA%B0%80%EA%B5%AC%EC%A0%90_%ED%8F%89%EC%A0%90_%EB%A6%AC%EB%B7%B0.jpeg)
+![가구점정보](https://raw.githubusercontent.com/hs-1971193-keonheehan/OpenSource10_6/f86199b14da257b4983caaf297cb26d45176c50b/%EA%B7%BC%EC%B2%98%EA%B0%80%EA%B5%AC%EC%A0%90_%ED%8F%89%EC%A0%90_%EB%A6%AC%EB%B7%B0.jpeg){: width="100" height="100"}
 + 사용자 위치 서비스를 기반으로, 가까운 가구점을 추천해줌. 
 + 가구점의 외관사진, 전화번호, 사용자 리뷰, 현 위치로부터 걸리는 시간 등을 한 번에 파악 가능. 
 
 
-![가구위치](https://raw.githubusercontent.com/hs-1971193-keonheehan/OpenSource10_6/f86199b14da257b4983caaf297cb26d45176c50b/%EA%B7%BC%EC%B2%98%EA%B0%80%EA%B5%AC%EC%A0%90_%EC%A7%80%EB%8F%84%EC%A0%84%EC%8B%9C.jpeg)
+![가구위치](https://raw.githubusercontent.com/hs-1971193-keonheehan/OpenSource10_6/f86199b14da257b4983caaf297cb26d45176c50b/%EA%B7%BC%EC%B2%98%EA%B0%80%EA%B5%AC%EC%A0%90_%EC%A7%80%EB%8F%84%EC%A0%84%EC%8B%9C.jpeg){: width="100" height="100"}
 + 지도에서 사용자의 현재 위치와 가구점의 정확한 위치 파악 가능. 
 + 카테고리 별(침구류, 가구, 인테리어)로 분류해서 위치를 한 번에 시각적으로 파악 가능. 
 
 
-![가구추천](https://raw.githubusercontent.com/hs-1971193-keonheehan/OpenSource10_6/f86199b14da257b4983caaf297cb26d45176c50b/%EA%B0%80%EA%B5%AC%EA%B2%80%EC%83%89_%EA%B0%80%EA%B5%AC%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC_%EA%B0%80%EA%B5%AC%EC%B6%94%EC%B2%9C.jpeg)
+![가구추천](https://raw.githubusercontent.com/hs-1971193-keonheehan/OpenSource10_6/f86199b14da257b4983caaf297cb26d45176c50b/%EA%B0%80%EA%B5%AC%EA%B2%80%EC%83%89_%EA%B0%80%EA%B5%AC%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC_%EA%B0%80%EA%B5%AC%EC%B6%94%EC%B2%9C.jpeg){: width="100" height="100"}
 + 검색을 통해 사용자의 데이터를 수집하고, 이를 토대로 가구 추천 서비스 제공. 
 + 더욱 상세한 카테고리 별로 가구들이 정리되어있음.
 
 
-![커뮤니티](https://raw.githubusercontent.com/hs-1971193-keonheehan/OpenSource10_6/f86199b14da257b4983caaf297cb26d45176c50b/%EA%B0%80%EA%B5%AC_%EC%BB%A4%EB%AE%A4%EB%8B%88%ED%8B%B0.jpeg)
+![커뮤니티](https://raw.githubusercontent.com/hs-1971193-keonheehan/OpenSource10_6/f86199b14da257b4983caaf297cb26d45176c50b/%EA%B0%80%EA%B5%AC_%EC%BB%A4%EB%AE%A4%EB%8B%88%ED%8B%B0.jpeg){: width="100" height="100"}
 + 커뮤니티 접근 권한을 동네로 한정지으면서 신뢰감과 편리성 모두 제공. 
 + 다양한 카테고리 별로 구분지어 커뮤니티를 단순히 중고거래에 한정짓지 않고 일상, 고민, 도움요청 등 실제 커뮤니티처럼 사용 가능. 
 
 
-![대화창](https://raw.githubusercontent.com/hs-1971193-keonheehan/OpenSource10_6/f86199b14da257b4983caaf297cb26d45176c50b/%EC%B1%84%ED%8C%85%ED%99%94%EB%A9%B4.jpeg)
+![대화창](https://raw.githubusercontent.com/hs-1971193-keonheehan/OpenSource10_6/f86199b14da257b4983caaf297cb26d45176c50b/%EC%B1%84%ED%8C%85%ED%99%94%EB%A9%B4.jpeg){: width="100" height="100"}
 + 1:1 대화를 통해 빠르고 정확하게 중고거래 가능
 
 ------
@@ -239,13 +239,11 @@ enabled=1
 yum install elasticsearch
 chkconfig --add elasticsearch
 
-###인터넷이 연결되지 않을 경우 페키지 다운로드 후 업로드 설치
 ### 인터넷이 연결되지 않을 경우 페키지 다운로드 후 업로드 설치
 
 wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.4.4.noarch.rpm
 rpm -ivh elasticsearch-1.4.4.noarch.rpm
 
-###설정
 ### 설정
 
 vim /etc/elasticsearch/elasticsearch.yml
@@ -253,19 +251,16 @@ vim /etc/elasticsearch/elasticsearch.yml
 40 node.name: "node1"
 47 node.master: true
 
-###Graylog-server, Graylog-web 설치
 ### Graylog-server, Graylog-web 설치
 
 http://docs.graylog.org/en/1.0/pages/installation.html#virtual-machine-appliances
 
-###많은 설치 방법이 있지만, yum repository방법으로 설치
 ### 많은 설치 방법이 있지만, yum repository방법으로 설치
 
 sudo rpm -Uvh https://packages.graylog2.org/repo/packages/graylog-1.0-repository-el6_latest.rpm
 yum install graylog-server graylog-web
 
-​
-###Graylog-server 설정
+
 ### Graylog-server 설정
 
 vim /etc/graylog/server/server.conf
@@ -367,13 +362,13 @@ https://github.com/scrapy/scrapy
 -----
 
 + 용어 
-	오퍼레이션(Operation): 그래프 상의 노드는 오퍼레이션(줄임말 op)으로 불립니다. 오퍼레이션은 하나 이상의 텐서를 받을 수 있습니다. 오퍼레이션은 계산을 수행하고, 결과를 하나 이상의 텐서로 반환할 수 있습니다.
+	오퍼레이션(Operation): 그래프 상의 노드는 오퍼레이션(줄임말 op)으로 불립니다. 오퍼레이션은 하나 이상의 텐서를 받을 수 있습니다. 오퍼레이션은 계산을 수행하고, 결과를 하나 이상의 텐서로 반환할 수 있습니다. <br>
 
-	텐서(Tensor): 내부적으로 모든 데이터는 텐서를 통해 표현됩니다. 텐서는 일종의 다차원 배열인데, 그래프 내의 오퍼레이션 간에는 텐서만이 전달됩니다. (Caffe의 Blob과 유사합니다.)
+	텐서(Tensor): 내부적으로 모든 데이터는 텐서를 통해 표현됩니다. 텐서는 일종의 다차원 배열인데, 그래프 내의 오퍼레이션 간에는 텐서만이 전달됩니다. (Caffe의 Blob과 유사합니다.<br>
 
-	세션(Session): 그래프를 실행하기 위해서는 세션 객체가 필요합니다. 세션은 오퍼레이션의 실행 환경을 캡슐화한 것입니다.
+	세션(Session): 그래프를 실행하기 위해서는 세션 객체가 필요합니다. 세션은 오퍼레이션의 실행 환경을 캡슐화한 것입니다. <br>
 
-	변수(Variables): 변수는 그래프의 실행시, 패러미터를 저장하고 갱신하는데 사용됩니다. 메모리 상에서 텐서를 저장하는 버퍼 역할을 합니다.
+	변수(Variables): 변수는 그래프의 실행시, 패러미터를 저장하고 갱신하는데 사용됩니다. 메모리 상에서 텐서를 저장하는 버퍼 역할을 합니다. <br>
 
 
 -------
