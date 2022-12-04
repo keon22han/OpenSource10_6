@@ -285,29 +285,29 @@ ElasticSearch는 GrayLog와 연동하여 GrayLog에서 보낸 로그들을 저�
 ------------
 ### 인터넷이 연결된 경우 yum repository에서 설치
     
-http://www.elastic.co/guide/en/elasticsearch/reference/current/setup-repositories.html
-rpm --import https://packages.elasticsearch.org/GPG-KEY-elasticsearch
-vi /etc/yum.repos.d/elasticsearch.repo
-[elasticsearch-1.4]
-name=Elasticsearch repository for 1.4.x packages
-baseurl=http://packages.elasticsearch.org/elasticsearch/1.4/centos
-gpgcheck=1
-gpgkey=http://packages.elasticsearch.org/GPG-KEY-elasticsearch
-enabled=1
-yum install elasticsearch
-chkconfig --add elasticsearch
+* http://www.elastic.co/guide/en/elasticsearch/reference/current/setup-repositories.html
+* rpm --import https://packages.elasticsearch.org/GPG-KEY-elasticsearch
+* vi /etc/yum.repos.d/elasticsearch.repo
+* [elasticsearch-1.4]
+* name=Elasticsearch repository for 1.4.x packages
+* baseurl=http://packages.elasticsearch.org/elasticsearch/1.4/centos
+* gpgcheck=1
+* gpgkey=http://packages.elasticsearch.org/GPG-KEY-elasticsearch
+* enabled=1
+* yum install elasticsearch
+* chkconfig --add elasticsearch
 ------------
 ### 인터넷이 연결되지 않을 경우 페키지 다운로드 후 업로드 설치
     
-wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.4.4.noarch.rpm    
-rpm -ivh elasticsearch-1.4.4.noarch.rpm
+* wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.4.4.noarch.rpm    
+* rpm -ivh elasticsearch-1.4.4.noarch.rpm
 ------------
 ### 설정
     
-vim /etc/elasticsearch/elasticsearch.yml    
-32 cluster.name: elastic    
-40 node.name: "node1"    
-47 node.master: true
+* vim /etc/elasticsearch/elasticsearch.yml    
+* 32 cluster.name: elastic    
+* 40 node.name: "node1"    
+* 47 node.master: true
 -----------
 ### Graylog-server, Graylog-web 설치
     
@@ -315,29 +315,32 @@ http://docs.graylog.org/en/1.0/pages/installation.html#virtual-machine-appliance
 -------------
 ### 많은 설치 방법이 있지만, yum repository방법으로 설치
     
-sudo rpm -Uvh https://packages.graylog2.org/repo/packages/graylog-1.0-repository-el6_latest.rpm    
-yum install graylog-server graylog-web
+* sudo rpm -Uvh https://packages.graylog2.org/repo/packages/graylog-1.0-repository-el6_latest.rpm    
+* yum install graylog-server graylog-web
 
 ---------------
 ### Graylog-server 설정
      
-vim /etc/graylog/server/server.conf    
-3 is_master = true    
-11 password_secret = l9aZxsHgL1g8Qo3CFLgxXfw9ihuxCRnpLwm8JIo9DoZ69f92OGEhEP3nrNcughxPCE8Co93fRfiiixI2TyvdNvKz2XXrGOYt    
-생성 방법 : yum install epel-release > yum install pwgen > pwgen -N 1 -s 96    
-22 root_password_sha2 = 03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4    
-생성방법 yum install perl-Digest-SHA / echo -n yourpassword | shasum -a 256    
-30 root_timezone = Asia/Seoul    
-36 rest_listen_uri = http://0.0.0.0:12900/    
-152 elasticsearch_cluster_name = elastic    
-155 #elasticsearch_node_name = graylog2-server    
-(오픈소스 소개 3.5) Scrapy 에서 웹 크롤링을 한 내용들을 바탕으로 검색을 진행합니다.    
-Scrapy에 대한 Elasticsearch 지원은 다음 모듈을 설치하여 사용할 수 있습니다.    
-pip install "ScrapyElasticSearch"     
-스파이더가 생성한 항목을 가져오고 라이브러리 pyes 를 사용하여 Elasticsearch에 있는 항목을 인덱싱 합니다.
+* vim /etc/graylog/server/server.conf    
+* 3 is_master = true    
+* 11 password_secret = l9aZxsHgL1g8Qo3CFLgxXfw9ihuxCRnpLwm8JIo9DoZ69f92OGEhEP3nrNcughxPCE8Co93fRfiiixI2TyvdNvKz2XXrGOYt    
+* 생성 방법 : yum install epel-release > yum install pwgen > pwgen -N 1 -s 96    
+* 22 root_password_sha2 = 03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4    
+* 생성방법 yum install perl-Digest-SHA / echo -n yourpassword | shasum -a 256    
+* 30 root_timezone = Asia/Seoul    
+* 36 rest_listen_uri = http://0.0.0.0:12900/    
+* 152 elasticsearch_cluster_name = elastic    
+* 155 #elasticsearch_node_name = graylog2-server
+
+    
+-------------
+## (오픈소스 소개 3.5에서) Scrapy 에서 웹 크롤링을 한 내용들을 바탕으로 검색을 진행합니다.    
+- Scrapy에 대한 Elasticsearch 지원은 다음 모듈을 설치하여 사용할 수 있습니다.    
+- pip install "ScrapyElasticSearch"     
+- 스파이더가 생성한 항목을 가져오고 라이브러리 pyes 를 사용하여 Elasticsearch에 있는 항목을 인덱싱 합니다.
 
 --------
-항목을 Elasticsearch에 넣도록 Scrapy를 구성하려면 어딘가에서 실행 중인 인스턴스가 있어야 하기때문에     
+- 항목을 Elasticsearch에 넣도록 Scrapy를 구성하려면 어딘가에서 실행 중인 인스턴스가 있어야 하기때문에     
 settings.py 에서 파이프라인을 구성합니다.
 
 -------
