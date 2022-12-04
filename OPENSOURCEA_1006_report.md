@@ -1,27 +1,27 @@
 ## 목차
 
 1. 서비스 설명
-1.1....사회적 배경
-1.2....가구조아의 특징
+1.1    사회적 배경
+1.2    가구조아의 특징
 
 2. 유사 서비스 분석
-2.1....오늘의 집
-2.2....집꾸미기
+2.1    오늘의 집
+2.2    집꾸미기
 
 3. 오픈소스 소개
-3.1....SpringBoot
-3.2....SpringSecurity
-3.3....GrayLog
-3.4....ElasticSearch
-3.5....Scrapy
-3.6....TensorFlow
-3.7....Grafana
-3.8....SwiftLocation(Google Maps Platform)
-3.9....MongoDB
+3.1    SpringBoot
+3.2    SpringSecurity
+3.3    GrayLog
+3.4    ElasticSearch
+3.5    Scrapy
+3.6    TensorFlow
+3.7    Grafana
+3.8    SwiftLocation(Google Maps Platform)
+3.9    MongoDB
 
 4. DFD
-4.1....DFD 
-4.2....DFD 설명
+4.1    DFD 
+4.2    DFD 설명
 
 -----------
 
