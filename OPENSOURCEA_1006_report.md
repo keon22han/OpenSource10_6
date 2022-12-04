@@ -4,24 +4,24 @@
 1.1    사회적 배경 <br>
 1.2    가구조아의 특징 <br>
 
-2. 유사 서비스 분석
-2.1    오늘의 집
-2.2    집꾸미기
+2. 유사 서비스 분석 <br>
+2.1    오늘의 집 <br>
+2.2    집꾸미기 <br>
 
-3. 오픈소스 소개
-3.1    SpringBoot
-3.2    SpringSecurity
-3.3    GrayLog
-3.4    ElasticSearch
-3.5    Scrapy
-3.6    TensorFlow
-3.7    Grafana
-3.8    SwiftLocation(Google Maps Platform)
-3.9    MongoDB
+3. 오픈소스 소개 <br>
+3.1    SpringBoot <br>
+3.2    SpringSecurity <br>
+3.3    GrayLog <br>
+3.4    ElasticSearch <br>
+3.5    Scrapy <br>
+3.6    TensorFlow <br>
+3.7    Grafana <br>
+3.8    SwiftLocation(Google Maps Platform) <br>
+3.9    MongoDB <br>
 
-4. DFD
-4.1    DFD 
-4.2    DFD 설명
+4. DFD <br>
+4.1    DFD <br> 
+4.2    DFD 설명 <br>
 
 -----------
 
