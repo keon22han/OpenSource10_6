@@ -40,9 +40,12 @@
 
 ### 1. 서비스 설명– 1.2 가구조아의 특징
 
-![가구점정보](https://raw.githubusercontent.com/hs-1971193-keonheehan/OpenSource10_6/f86199b14da257b4983caaf297cb26d45176c50b/%EA%B7%BC%EC%B2%98%EA%B0%80%EA%B5%AC%EC%A0%90_%ED%8F%89%EC%A0%90_%EB%A6%AC%EB%B7%B0.jpeg)
 + 대상: 1인 가구, 중고거래를 선호하는 대학생이나 사회초년생
 + 특징: GUI, 세부 설명 (아래 참고) 
++ 
+
+![가구점정보](https://raw.githubusercontent.com/hs-1971193-keonheehan/OpenSource10_6/f86199b14da257b4983caaf297cb26d45176c50b/%EA%B7%BC%EC%B2%98%EA%B0%80%EA%B5%AC%EC%A0%90_%ED%8F%89%EC%A0%90_%EB%A6%AC%EB%B7%B0.jpeg)
+
 
 
 ![가구위치](https://raw.githubusercontent.com/hs-1971193-keonheehan/OpenSource10_6/f86199b14da257b4983caaf297cb26d45176c50b/%EA%B7%BC%EC%B2%98%EA%B0%80%EA%B5%AC%EC%A0%90_%EC%A7%80%EB%8F%84%EC%A0%84%EC%8B%9C.jpeg)
